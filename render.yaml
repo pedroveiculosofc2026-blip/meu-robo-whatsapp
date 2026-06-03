@@ -1,9 +1,9 @@
 services:
   - type: web
     name: meu-robo-whatsapp
-    runtime: docker
-    image: docker.io/evolutionapi/evolution-api:latest
     plan: free
+    image:
+      url: docker.io/evolutionapi/evolution-api:latest
     envVars:
       - key: AUTHENTICATION_TYPE
         value: apikey
