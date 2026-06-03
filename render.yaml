@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: meu-robo-whatsapp
+    runtime: docker
+    image: docker.io/evolutionapi/evolution-api:latest
+    plan: free
+    envVars:
+      - key: AUTHENTICATION_TYPE
+        value: apikey
+      - key: AUTHENTICATION_API_KEY
+        value: "246810"
+      - key: TYPEBOT_ENABLED
+        value: "true"
+      - key: TYPEBOT_URL
+        value: https://app.typebot.com
